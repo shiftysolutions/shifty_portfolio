@@ -2,6 +2,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'portfolio.developement')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'portfolio.production')
 
 application = get_wsgi_application()
