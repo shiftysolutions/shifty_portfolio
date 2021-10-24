@@ -1,0 +1,50 @@
+{% extends "fr/base.html" %}
+
+{% block title %}Hiring{% endblock %}
+
+{% block content %}
+{% load static %}
+<div class="section bg-gray-4 wf-section">
+    <div class="container margin-top">
+        <div class="row row-split-content">
+            <div class="content-width-medium">
+                <h1 class="large-heading">Devenez membre d'une équipe à distance incroyable!</h1>
+                <div class="text-block-12">
+                    Shifty Solutions ne se définit pas comme une agence et ne fonctionne pas comme telle. Nous croyons qu'il faut servir nos clients comme des extensions de leurs équipes. Ayant une vision globale et axée sur les résultats, 
+                    les personnes qui travaillent chez Shifty Solutions aiment la flexibilité, la rémunération, la camaraderie et l'accent mis sur la production d'excellents résultats. Rejoignez-nous et faites partie d'une équipe spéciale! 
+                    (Ou ne le faites pas, et portez un coup dur à notre ego.)
+                </div>
+                <h6 class="subheading text-primary-1 margin-top">Open positions</h6>
+                <ul role="list" class="w-list-unstyled">
+                    <li class="icon-list-item-2 align-center">
+                        <div class="circle-small-3">
+                            <img src="https://uploads-ssl.webflow.com/5ec7461ead11d952ffe3cd82/5ec7461f528af05990124631_icon-check-small.svg" alt=""/>
+                        </div>
+                        <h5 class="no-bottom-space-2">
+                            <a href="{% url 'hiring_details' %}">Project Manager - Ecommerce (1)</a>
+                        </h5>
+                    </li>
+                    <li class="icon-list-item-2 align-center">
+                        <div class="circle-small-3">
+                            <img src="https://uploads-ssl.webflow.com/5ec7461ead11d952ffe3cd82/5ec7461f528af05990124631_icon-check-small.svg" alt=""/>
+                        </div>
+                        <h5 class="no-bottom-space-2">Full Stack Developer - Node.js & React (2)</h5>
+                    </li>
+                    <li class="icon-list-item-2 align-center">
+                        <div class="circle-small-3">
+                            <img src="https://uploads-ssl.webflow.com/5ec7461ead11d952ffe3cd82/5ec7461f528af05990124631_icon-check-small.svg" alt=""/>
+                        </div>
+                        <h5 class="no-bottom-space-2">Director Of Operations (1)</h5>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-width-medium">
+                <img src="{% static 'img/bg/3.jpg' %}" style="width: 100%;" class="bordered-image" />
+            </div>
+        </div>
+    </div>
+</div>
+{% include "fr/components/hey.html" %}
+{% include "fr/components/contact.html" %}
+
+{% endblock %}

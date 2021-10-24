@@ -1,0 +1,68 @@
+{% load static %}
+
+<div class="navbar-sticky bg-white">
+    <div class="navigation-container">
+        <div class="container-header">
+            <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+                <a href="{% url 'en_index' %}" aria-current="page" class="brand w-nav-brand w--current">
+                    <img src="{% static 'img/logo/site-noir.png' %}" alt="" class="image-3"/>
+                </a>
+                <a href="{% url 'en_hiring_list' %}" class="badge hidden-on-mobile w-inline-block">
+                    <div class="badge-bg badge-solid bg-primary-2"></div>
+                    <div class="badge-text">We are hiring</div>
+                </a>
+                <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
+                    <div class="nav-links nav-links-1">
+                        <a href="{% url 'en_index' %}" class="nav-link w-nav-link">Home</a>
+                        <div data-delay="0" data-hover="true" class="nav-dropdown w-dropdown">
+                            <div class="nav-link w-dropdown-toggle">
+                                <div class="row no-wrap">
+                                    <div class="text-block-header-menu">Services</div>
+                                    <img src="{% static 'img/icon/dropdown.svg' %}" alt="" class="dropdown-icon"/>
+                                </div>
+                            </div>
+                            <nav class="dropdown-list-2 w-dropdown-list">
+                                <div class="dropdown-grid-2">
+                                    <div class="dropdown-menu">
+                                        <a href="" class="dropdown-link-2 w-dropdown-link">Service number 1</a>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <div data-delay="0" data-hover="true" class="nav-dropdown w-dropdown">
+                            <div class="nav-link w-dropdown-toggle">
+                                <div class="row no-wrap">
+                                    <div class="text-block-header-menu">Industries</div>
+                                    <img src="{% static 'img/icon/dropdown.svg' %}" alt="" class="dropdown-icon"/>
+                                </div>
+                            </div>
+                            <nav class="dropdown-list-2 w-dropdown-list">
+                                <div class="dropdown-grid-2">
+                                    <div class="dropdown-menu">
+                                        <a href="" class="dropdown-link-2 w-dropdown-link">Industry number 1</a>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <a href="{% url 'en_about' %}" class="nav-link w-nav-link">About us</a>
+                        <a href="{% url 'index' %}" class="nav-link w-nav-link">
+                            <img src="{% static 'img/icon/language.png' %}" alt="" class="dropdown-icon"/>
+                            &nbsp;
+                            Français
+                        </a>
+                    </div>
+                </nav>
+                <div class="nav-menu-button-wrapper">
+                    <div class="nav-functions">
+                        
+                        <a href="{% url 'en_contact' %}" class="button w-button" style="margin-left:20px">Let &#x27;s Talk</a>
+                    </div>
+                    <div class="menu-button w-nav-button">
+                        <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5eb23de768fa3df357018c42_icon-menu.svg" alt="" class="menu-icon"/>
+                        <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5eb23de768fa3d3777018c37_icon-x.svg" alt="" class="menu-cross-icon"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

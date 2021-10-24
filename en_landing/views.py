@@ -12,22 +12,22 @@ from core.models import Career, BlogPost
 ################################# BASE START ###################################
 
 class IndexView(View):
-    template = "fr/base/index.html"
+    template = "en/base/index.html"
     def get(self, request):
         return render(request, self.template)
 
 class AboutView(View):
-    template = "fr/base/about.html"
+    template = "en/base/about.html"
     def get(self, request):
         return render(request, self.template)
 
 class ContactView(View):
-    template = "fr/base/contact.html"
+    template = "en/base/contact.html"
     def get(self, request):
         return render(request, self.template)
 
 class WorksView(View):
-    template = "fr/base/works.html"
+    template = "en/base/works.html"
     def get(self, request):
         return render(request, self.template)
 
@@ -36,7 +36,7 @@ class WorksView(View):
 ################################# HIRING START ###################################
 
 class HiringListView(View):
-    template = "fr/hiring/list.html"
+    template = "en/hiring/list.html"
     def get(self, request):
         careers = Career.objects.all()
         context = {
@@ -45,7 +45,7 @@ class HiringListView(View):
         return render(request, self.template)
 
 class HiringDetailsView(View):
-    template = "fr/hiring/details.html"
+    template = "en/hiring/details.html"
     def get(self, request):
         return render(request, self.template)
 
@@ -54,7 +54,7 @@ class HiringDetailsView(View):
 
 ################################# BLOG START ###################################
 class BlogListView(View):
-    template = "fr/blog/list.html"
+    template = "en/blog/list.html"
     def get(self, request):
         posts = BlogPost.objects.all()
         context = {
@@ -63,7 +63,7 @@ class BlogListView(View):
         return render(request, self.template)
 
 class BlogDetailsView(View):
-    template = "fr/blog/details.html"
+    template = "en/blog/details.html"
     def get(self, request):
         return render(request, self.template)
 ################################# BLOG END ###################################
@@ -72,7 +72,7 @@ class BlogDetailsView(View):
 ################################# SERVICES START ###################################
 
 class ServicesView(View):
-    template = "fr/services/index.html"
+    template = "en/services/index.html"
     def get(self, request):
         return render(request, self.template)
 

@@ -1,0 +1,123 @@
+{% extends "fr/base.html" %}
+
+{% block title %}Contact us{% endblock %}
+
+{% block content %}
+<div class="section bg-gray-4 wf-section">
+    <div class="container margin-top">
+        <div class="row row-split-content">
+            <div>
+                <h1 class="large-heading">
+                    Construisons ensemble l'avenir de votre entreprise !<br/>
+                </h1>
+                <ul role="list" class="list-grid margin-top w-list-unstyled">
+                    <li class="icon-grid-list-item-2">
+                        <div class="circle-small-2">
+                            <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5eb23de768fa3d1f89018c98_icon-check-small.svg" alt=""/>
+                        </div>
+                        <div>Configuration de la pile technique</div>
+                    </li>
+                    <li class="icon-grid-list-item-2">
+                        <div class="circle-small-2">
+                            <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5eb23de768fa3d1f89018c98_icon-check-small.svg" alt=""/>
+                        </div>
+                        <div>Conception créatifs</div>
+                    </li>
+                    <li class="icon-grid-list-item-2">
+                        <div class="circle-small-2">
+                            <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5eb23de768fa3d1f89018c98_icon-check-small.svg" alt=""/>
+                        </div>
+                        <div>Intégrations et applications tierces</div>
+                    </li>
+                    <li class="icon-grid-list-item-2">
+                        <div class="circle-small-2">
+                            <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5eb23de768fa3d1f89018c98_icon-check-small.svg" alt=""/>
+                        </div>
+                        <div>Migrations de données complètes</div>
+                    </li>
+                    <li class="icon-grid-list-item-2 no-border">
+                        <div class="circle-small-2">
+                            <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5eb23de768fa3d1f89018c98_icon-check-small.svg" alt=""/>
+                        </div>
+                        <div class="text-block-16">Préservation et amélioration du référencement </div>
+                    </li>
+                    <li class="icon-grid-list-item-2 no-border">
+                        <div class="circle-small-2">
+                            <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5eb23de768fa3d1f89018c98_icon-check-small.svg" alt=""/>
+                        </div>
+                        <div>Capacités et fonctionnalités B2B</div>
+                    </li>
+                </ul>
+                <div class="w-layout-grid grid-halves margin-top">
+                    <div class="row row-no-wrap row-align-center">
+                        <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5fb1f2f3de4f3f16559d2cb6_sand-clock.svg" width="36" alt="" class="icon-large-quote"/>
+                        <div class="text-space-left">
+                            <h6 class="heading-11">Délai de 15 jours</h6>
+                            <div class="text-block-23">
+                                Laissez nous prendre controle et gérons les maux de tête.<br/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-no-wrap row-align-center">
+                        <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5fb1f2c4bd24f12b2c61cf1f_price-tag.svg" width="36" alt="" class="icon-large-quote"/>
+                        <div class="text-space-left">
+                            <h6 class="heading-12">Prix flexibles.</h6>
+                            <div class="text-block-24">Nous avons construit plus de 100 sites et savons exactement ce qu'il faut.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="div-block content-width-large">
+                <div class="card no-border shadow-small">
+                    <div class="card-body">
+                        <h6 class="subheading text-primary-1">
+                            Fill out our form and we will get back to you within a few minutes.<br/>
+                        </h6>
+                        <div id="" class="w-form">
+                            <form method="POST" action="{% url 'contact' %}">
+                                <div class="form-grid-halves">
+                                    <input type="text" class="form-input w-input" autofocus="true" maxlength="256" name="Name" data-name="Name" placeholder="Nom complet" id="Name" required=""/>
+                                    <input type="text" class="form-input w-input" maxlength="256" name="Organization" data-name="Organization" placeholder="Organisation" id="Organization" required=""/>
+                                </div>
+                                <div class="form-grid-halves">
+                                    <input type="email" class="form-input w-input" maxlength="256" name="Email" data-name="Email" placeholder="Addresse email" id="Email" required=""/>
+                                    <input type="tel" class="form-input w-input" maxlength="256" name="Phone" data-name="Phone" placeholder="Numéro de telephone" id="Phone" required=""/>
+                                </div>
+                                <div class="form-group">
+                                    <label id="new-website" class="w-checkbox radio-checkbox-with-label">
+                                        <div class="w-checkbox-input w-checkbox-input--inputType-custom radio-checkbox-custom"></div>
+                                        <input type="checkbox" id="New Website" name="New-Website" data-name="New Website" style="opacity:0;position:absolute;z-index:-1"/>
+                                        <span for="New Website-2" class="radio-checkbox-label w-form-label">I am building a brand new e-commerce website</span>
+                                    </label>
+                                    <label id="upgrade-website" class="w-checkbox radio-checkbox-with-label">
+                                        <div class="w-checkbox-input w-checkbox-input--inputType-custom radio-checkbox-custom"></div>
+                                        <input type="checkbox" id="Upgrade Website" name="Upgrade-Website" data-name="Upgrade Website" style="opacity:0;position:absolute;z-index:-1"/>
+                                        <span for="Upgrade Website-2" class="radio-checkbox-label w-form-label">I want to upgrade and re-design my current website</span>
+                                    </label>
+                                    <label id="migrate-website" class="w-checkbox radio-checkbox-with-label">
+                                        <div class="w-checkbox-input w-checkbox-input--inputType-custom radio-checkbox-custom"></div>
+                                        <input type="checkbox" id="Migrate Website" name="Migrate-Website" data-name="Migrate Website" style="opacity:0;position:absolute;z-index:-1"/>
+                                        <span for="Migrate Website-2" class="radio-checkbox-label w-form-label">I am migrating from another platform to Shopify</span>
+                                    </label>
+                                </div>
+                                <div class="form-group" style="margin-bottom: 40px">
+                                    <textarea name="Comments" maxlength="5000" id="Comments" required="" data-name="Comments" placeholder="Parlez-nous de votre projet" class="form-input text-area-input w-input"></textarea>
+                                </div>
+                                <input type="submit" value="Nous contacter" class="button button-block w-button"/>
+                            </form>
+                            <div class="form-feedback bg-success w-form-done">
+                                <div>Thank you! Your submission has been received!</div>
+                            </div>
+                            <div class="form-feedback bg-error w-form-fail">
+                                <div>Oops! Something went wrong while submitting the form.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container margin-top"></div>
+</div>
+{% include "fr/components/company.html" %}
+{% endblock %}

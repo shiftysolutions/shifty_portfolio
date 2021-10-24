@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shifty Solutions - {% block title %}{% endblock %}</title>
+        {% include "fr/components/head.html" %}
+    </head>
+    <body class="body-2">
+        {% include "fr/components/navbar.html" %}
+        {% block content %}{% endblock %}
+        {% include "fr/components/footer.html" %}
+        {% include "fr/components/scripts.html" %}
+    </body>
+</html>
