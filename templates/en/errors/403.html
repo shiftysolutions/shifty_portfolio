@@ -1,0 +1,24 @@
+{% extends "en/base.html" %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+{% load static %}
+<div class="section wf-section">
+    <div class="container">
+        <div class="row row-split-content">
+            <div class="content-width-small">
+                <h3 class="large-heading">404 - The page was not found.</h3>
+                <div>
+                    Oops! We can’t find the page you are looking for. Try starting from the<a href="/">homepage</a>
+                    or visit our blog to help point you in the right direction.
+                </div>
+                <a href="/" class="button margin-top w-button">Back to home</a>
+            </div>
+            <div class="content-width-small">
+                <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5eb23de768fa3db98f018d1d_illustration-6.svg" width="612" alt=""/>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

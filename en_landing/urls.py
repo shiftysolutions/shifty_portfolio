@@ -19,3 +19,7 @@ urlpatterns += [
     path('hiring/project-manager/', HiringDetailsView.as_view(), name="en_hiring_details"),
 ]
 
+urlpatterns += [
+    path('blog/', BlogListView.as_view(), name="en_blog"),
+    path('blog/<str:article>/', BlogDetailsView.as_view(), name="en_blog_details"),
+]

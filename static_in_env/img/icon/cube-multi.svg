@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="rubicons cube-multi" width="36" height="36" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none">
+  <path d="M7.5 10.65L12 13l4.5-2.35V5.363L12 3.013l-4.5 2.35v5.287z" stroke-linecap="round"></path>
+  <path d="M7.5 5.363l4.5 2.35 4.5-2.35M12 13V7.713M7.5 20v-4M16.5 20v-4M3 18.545l4.506 2.322 4.506-2.322v-5.223L7.506 11 3 13.322v5.223z" stroke-linecap="round"></path>
+  <path d="M3 13.322l4.506 2.321 4.506-2.321M12.041 18.637l4.48 2.35L21 18.637V13.35L16.521 11l-4.48 2.35v5.287z" stroke-linecap="round"></path>
+  <path d="M12.041 13.35l4.48 2.35L21 13.35" stroke-linecap="round"></path>
+</svg>

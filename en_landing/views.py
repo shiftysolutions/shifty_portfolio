@@ -56,16 +56,20 @@ class HiringDetailsView(View):
 class BlogListView(View):
     template = "en/blog/list.html"
     def get(self, request):
-        posts = BlogPost.objects.all()
+        articles = BlogPost.objects.all()
         context = {
-            'posts': posts
+            'articles': articles
         }
-        return render(request, self.template)
+        return render(request, self.template, context)
 
 class BlogDetailsView(View):
     template = "en/blog/details.html"
-    def get(self, request):
-        return render(request, self.template)
+    def get(self, request, *args, **kwargs):
+        article_slug = kwargs.get('article')
+        context = {
+            'article': get_object_or_404(BlogPost, slug=article_slug)
+        }
+        return render(request, self.template, context)
 ################################# BLOG END ###################################
 
 
@@ -77,3 +81,20 @@ class ServicesView(View):
         return render(request, self.template)
 
 ################################# SERVICES END ###################################
+
+
+def error_400(request,  exception):
+    data = {}
+    return render(request,'en/errors/400.html', data)
+
+def error_403(request,  exception):
+    data = {}
+    return render(request,'en/errors/403.html', data)
+
+def error_404(request, exception):
+    data = {}
+    return render(request,'en/errors/404.html', data)
+
+def error_500(request):
+    data = {}
+    return render(request,'en/errors/500.html', data)

@@ -3,5 +3,55 @@
 {% block title %}{% endblock %}
 
 {% block content %}
-
+<div class="section bg-gray-4 wf-section">
+    <div class="container">
+        <h1>
+            Ecommerce Blog<br/>
+        </h1>
+        <div class="sidebar-layout">
+            <div class="w-dyn-list">
+                <div role="list" class="grid-rows w-dyn-items">
+                    {% for article in articles %}
+                    <div role="listitem" class="w-dyn-item">
+                        <div class="w-layout-grid featured-blog-post-grid">
+                            <div class="blog-post-category-placeholder sidebar-blog-post-category-placeholder w-condition-invisible">
+                                <img src="https://uploads-ssl.webflow.com/plugins/Basic/assets/placeholder.60f9b1840c.svg" alt="" class="icon-extra-large"/>
+                            </div>
+                            <a href="{% url 'en_blog_details' article=article.slug %}" class="w-inline-block">
+                                <img src="{{ article.miniature }}" alt="{{ article.title }}" />
+                            </a>
+                            <div class="featured-blog-post-content">
+                                <a href="{% url 'en_blog_details' article=article.slug %}" class="text-gray-1 w-inline-block">
+                                    <h2 class="blog-list-article-name">{{ article.title }}</h2>
+                                    <div class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, fugit? Dolor tenetur, inventore aliquid fugit temporibus. </div>
+                                    <div class="read-more-blog">
+                                        <strong>READ ARTICLE &gt;&gt;</strong>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="sidebar">
+                <div class="widget">
+                    <h5 class="widget-heading">Featured Posts</h5>
+                    <div class="w-dyn-list">
+                        <div role="list" class="grid-rows grid-rows-compact w-dyn-items">
+                            {% for article in featured %}
+                            <div role="listitem" class="w-dyn-item">
+                                <a href="{% url 'en_blog_details' article=article.slug %}" class="blog-post-small w-inline-block">
+                                    <img src="{{ article.miniature }}" alt="" class="sidebar-blog-post-image"/>
+                                    <div>{{ article.title }} </div>
+                                </a>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

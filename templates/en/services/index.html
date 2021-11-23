@@ -3,5 +3,326 @@
 {% block title %}{% endblock %}
 
 {% block content %}
-
+{% load static %}
+<div class="section bg-gray-4 wf-section">
+    <div class="container margin-top">
+        <div class="row row-split-content">
+            <div>
+                <h1 class="large-heading">
+                    Shopify App Developement. <br/>
+                </h1>
+                <ul role="list" class="list-grid margin-top w-list-unstyled">
+                    <li class="icon-grid-list-item-2">
+                        <div class="circle-small-2">
+                            <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5eb23de768fa3d1f89018c98_icon-check-small.svg" alt=""/>
+                        </div>
+                        <div>Data-driven strategy</div>
+                    </li>
+                    <li class="icon-grid-list-item-2">
+                        <div class="circle-small-2">
+                            <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5eb23de768fa3d1f89018c98_icon-check-small.svg" alt=""/>
+                        </div>
+                        <div>Enhanced user experience</div>
+                    </li>
+                    <li class="icon-grid-list-item-2">
+                        <div class="circle-small-2">
+                            <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5eb23de768fa3d1f89018c98_icon-check-small.svg" alt=""/>
+                        </div>
+                        <div>One time or Subscription payment</div>
+                    </li>
+                    <li class="icon-grid-list-item-2">
+                        <div class="circle-small-2">
+                            <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5eb23de768fa3d1f89018c98_icon-check-small.svg" alt=""/>
+                        </div>
+                        <div>Optimized for Mobile and SEO</div>
+                    </li>
+                    <li class="icon-grid-list-item-2 no-border">
+                        <div class="circle-small-2">
+                            <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5eb23de768fa3d1f89018c98_icon-check-small.svg" alt=""/>
+                        </div>
+                        <div class="text-block-16">Shopify App review process</div>
+                    </li>
+                    <li class="icon-grid-list-item-2 no-border">
+                        <div class="circle-small-2">
+                            <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5eb23de768fa3d1f89018c98_icon-check-small.svg" alt=""/>
+                        </div>
+                        <div>3rd-party integrations</div>
+                    </li>
+                </ul>
+                <div class="margin-top">
+                    <div class="w-layout-grid grid-halves">
+                        <div class="row row-no-wrap row-align-center">
+                            <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5fb1f2f3de4f3f16559d2cb6_sand-clock.svg" width="36" alt="" class="icon-large"/>
+                            <div class="text-space-left">
+                                <h6 class="h6-small">30 Days Guaranteed</h6>
+                                <div>
+                                    We &#x27;re fast, but we &#x27;re thorough! Efficient is our middle name.<br/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-no-wrap row-align-center">
+                            <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5fb1f2c4bd24f12b2c61cf1f_price-tag.svg" width="36" alt="" class="icon-large"/>
+                            <div class="text-space-left">
+                                <h6 class="h6-small">Fixed Prices.</h6>
+                                <div>With dozen apps under our belt, we know exactly what it takes. </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-quote no-border margin-top hidden-on-mobile">
+                    <div class="card-body">
+                        <div class="text-small">
+                            Shifty solutions offeres a good balance of experience and value. We have a direct style and ability to propose multiple concise options to solve a problem or address a need. We provide clear management of expectations with held-up commitments and efficiency.<br/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="div-block content-width-large">
+                <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5f7d3dd89015323a9f41c8d9_pivofy-shopify-commerce.jpg" width="506" alt="" class="rotate-image-left bordered-image margin-top">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section wf-section">
+    <div class="container">
+        <div class="section-title-wide">
+            <h3>Applications Types</h3>
+        </div>
+        <div class="container margin-top">
+            <div class="container">
+                <div class="w-layout-grid grid-quarters-2 cards-grid">
+                    <div class="card-3 no-border">
+                        <a href="#public_app" class="w-inline-block">
+                            <img src="{% static 'img/app_type/public.png' %}" width="824" alt="" class="card-image-head app-type-image"/>
+                        </a>
+                    </div>
+                    <div class="card-3 no-border text-center">
+                        <a href="#custom_app" class="w-inline-block">
+                            <img src="{% static 'img/app_type/custom.png' %}" width="824" alt="" class="card-image-head app-type-image"/>
+                        </a>
+                    </div>
+                    <div class="card-3 no-border text-center">
+                        <a href="#private_app" class="w-inline-block">
+                            <img src="{% static 'img/app_type/private.png' %}" width="824" alt="" class="card-image-head app-type-image"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'en/components/process.html' %}
+<div class="section wf-section">
+    <div class="container">
+        <div class="row row-split-content direction-reverse">
+            <div class="content-width-medium">
+                <img src="{% static 'img/app_type/shopify_black.png' %}" height="" width="200" alt="Shopify Logo" class="image"/>
+                <h3 class="large-heading margin-top">We build more than just Shopify apps. </h3>
+                <div class="content-text-block">
+                    Our dedicated  <strong>apps development</strong> team can build <strong>custom apps</strong> for Shopify - or any platform, for that matter.<br />
+                    We can build a solution for your website, no matter which system you use.
+                </div>
+                <ul role="list" class="list-grid margin-top w-list-unstyled">
+                    <li class="icon-grid-list-item">
+                        <div class="circle-small">
+                            <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5eb23de768fa3d1f89018c98_icon-check-small.svg" alt=""/>
+                        </div>
+                        <div class="text-block-2">Use of the latest technologies</div>
+                    </li>
+                    <li class="icon-grid-list-item">
+                        <div class="circle-small">
+                            <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5eb23de768fa3d1f89018c98_icon-check-small.svg" alt=""/>
+                        </div>
+                        <div class="accordion-title">Turn any concept into code</div>
+                    </li>
+                    <li class="icon-grid-list-item">
+                        <div class="circle-small">
+                            <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5eb23de768fa3d1f89018c98_icon-check-small.svg" alt=""/>
+                        </div>
+                        <div>Creative web design</div>
+                    </li>
+                    <li class="icon-grid-list-item">
+                        <div class="circle-small">
+                            <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5eb23de768fa3d1f89018c98_icon-check-small.svg" alt=""/>
+                        </div>
+                        <div>Custom tailored apps</div>
+                    </li>
+                    <li class="icon-grid-list-item">
+                        <div class="circle-small">
+                            <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5eb23de768fa3d1f89018c98_icon-check-small.svg" alt=""/>
+                        </div>
+                        <div>Out-of-the-box features</div>
+                    </li>
+                    <li class="icon-grid-list-item">
+                        <div class="circle-small">
+                            <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5eb23de768fa3d1f89018c98_icon-check-small.svg" alt=""/>
+                        </div>
+                        <div>All kinds of Integrations</div>
+                    </li>
+                    <li class="icon-grid-list-item no-border">
+                        <div class="circle-small">
+                            <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5eb23de768fa3d1f89018c98_icon-check-small.svg" alt=""/>
+                        </div>
+                        <div>Data &amp; content migrations</div>
+                    </li>
+                    <li class="icon-grid-list-item no-border">
+                        <div class="circle-small">
+                            <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5eb23de768fa3d1f89018c98_icon-check-small.svg" alt=""/>
+                        </div>
+                        <div>Consulting &amp; support</div>
+                    </li>
+                </ul>
+                <div class="row row-justify-center"></div>
+            </div>
+            <div class="content-width-medium">
+                <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5ec34ead49f524f6eeb2ca3a_shopify-dashboard-web.jpg" width="506"  srcset="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5ec34ead49f524f6eeb2ca3a_shopify-dashboard-web-p-500.jpeg 500w, https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5ec34ead49f524f6eeb2ca3a_shopify-dashboard-web-p-800.jpeg 800w, https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5ec34ead49f524f6eeb2ca3a_shopify-dashboard-web-p-1080.jpeg 1080w, https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5ec34ead49f524f6eeb2ca3a_shopify-dashboard-web.jpg 1200w" alt="eCommerce Growth for Shopify Stores"/>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section bg-gray-4 wf-section">
+    <div class="container">
+        <div class="section-title-2">
+            <h6 class="subheading text-primary-1">The quality and craftsmanship you expect of your products</h6>
+            <h3 class="large-heading-2">in a modern digital world</h3>
+        </div>
+        <div class="row row-justify-center">
+            <ul role="list" class="content-width-large-3">
+                <li class="icon-list-item-2 align-center">
+                    <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5eb23de768fa3d4d7b018d6f_speed.svg" alt="" class="icon-extra-large-2"/>
+                    <div class="text-space-left-large">
+                        <h4 class="heading-16">A robust web production</h4>
+                        <div class="text-block-29">Standard with today &#x27;s solutions: redundant security features, scalable technologies and 99.9% uptime. Are we speaking your language? </div>
+                    </div>
+                </li>
+                <li class="icon-list-item-2 align-center">
+                    <img src="https://uploads-ssl.webflow.com/5ec7461ead11d952ffe3cd82/5ec7461f528af05628124710_goal.svg" alt="" class="icon-extra-large-2"/>
+                    <div class="text-space-left-large">
+                        <h4 class="heading-17">Numbers that add up</h4>
+                        <div class="text-block-30">Custom and purpose-built user experiences result in improved conversion rates, order volumes and other metrics that &#x27;ll make your ears (and balance sheets) perk up.</div>
+                    </div>
+                </li>
+                <li class="icon-list-item-2 align-center">
+                    <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5eb23de768fa3d801b018d6d_profit.svg" alt="" class="icon-extra-large-2"/>
+                    <div class="text-space-left-large">
+                        <h4 class="heading-18">Impactful Improvement</h4>
+                        <div class="text-block-31">Let's be honest, you're here to make money, whether it's an app to automate your stores or it's a B2B service, we're gonna build you just that. </div>
+                    </div>
+                </li>
+                <li class="icon-list-item-2 align-center">
+                    <img src="https://uploads-ssl.webflow.com/5ec7461ead11d952ffe3cd82/5ec7461f528af0acfa124723_omnichannel.svg" alt="" class="icon-extra-large-2"/>
+                    <div class="text-space-left-large">
+                        <h4 class="heading-18">Scalability</h4>
+                        <div class="text-block-31">Clean code is code that is easy to understand and easy to change. combined with a good database architecture. that's the definition of a scalable app </div>
+                    </div>
+                </li>
+                <li class="icon-list-item-2 align-center">
+                    <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5eb23de768fa3d1db9018d63_face-id.svg" alt="" class="icon-extra-large-2"/>
+                    <div class="text-space-left-large">
+                        <h4 class="heading-18">Automated outputs</h4>
+                        <div class="text-block-31">Key insights and analytics can be delivered right to your fingertips, automating those &quot;fact finding &quot;missions and making decisions easier and clearer than ever. </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="section wf-section" id="public_app">
+    <div class="container">
+        <div class="row row-split-content direction-reverse">
+            <div class="content-width-medium">
+                <img src="{% static 'img/app_type/shopify_black.png' %}" height="" width="200" alt="Shopify Logo" class="image"/>
+                <h3 class="large-heading margin-top">Public Shopify Application. </h3>
+                <div class="content-text-block">
+                    There are two types of public apps,
+                    <strong>listed</strong> and <strong>unlisted</strong>. You can install listed apps from the Shopify App Store.<br />
+                    Unlisted apps don't appear in <strong>Shopify App Store</strong> search results or categories. Instead, you can install them from the app's App Store listing or the developer's website.
+                    Both listed and unlisted apps must pass the <strong>Shopify App review process</strong>.
+                </div>
+            </div>
+            <div class="content-width-medium">
+                <img src="{% static 'img/app_type/public.png' %}" width="506" alt="Public Shopify Application"/>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section bg-gray-4 wf-section" id="custom_app">
+    <div class="container">
+        <div class="row row-split-content direction-reverse">
+            <div class="content-width-medium">
+                <img src="{% static 'img/app_type/custom2.png' %}" width="506" alt="Custom Shopify Application"/>
+            </div>
+            <div class="content-width-medium">
+                <img src="{% static 'img/app_type/shopify_black.png' %}" height="" width="200" alt="Shopify Logo" class="image"/>
+                <h3 class="large-heading margin-top">Custom Shopify Application. </h3>
+                <div class="content-text-block">
+                    Custom apps can be used to add features to your Shopify admin or to extend your online store to other platforms using custom storefronts. Custom apps are built exclusively for your Shopify store and aren't listed on the Shopify App Store.
+                    <br />
+                    Shifty solutions make a custom app for you without needing API access to your store and access to your Shopify admin. You can install a custom app by clicking an install link provided to you by us.
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<div class="section wf-section" id="private_app">
+    <div class="container">
+        <div class="row row-split-content direction-reverse">
+            <div class="content-width-medium">
+                <img src="{% static 'img/app_type/shopify_black.png' %}" height="" width="200" alt="Shopify Logo" class="image"/>
+                <h3 class="large-heading margin-top">Private Shopify Application. </h3>
+                <div class="content-text-block">
+                    Private apps are available only to your store and aren't listed on the Shopify App Store. You can create a private app for your store in the Shopify admin.
+                </div>
+            </div>
+            <div class="content-width-medium">
+                <img src="{% static 'img/app_type/private.png' %}" width="506" alt="Private Shopify Application"/>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section bg-gray-4 bottom-space-small wf-section">
+    <div class="container">
+        <div class="w-layout-grid row row-split-content">
+            <div class="content-width-medium">
+                <h3 class="large-heading">
+                    Transforming great ideas into commercial successes.<br>
+                </h3>
+                <div class="text-block-3">
+                    We are passionate about taking your business to the next level. Consider us an extension of your team; reach out to us because we love to hear from you! <br>
+                </div>
+            </div>
+            <div class="content-width-medium">
+                <div class="w-layout-grid grid-rows grid-rows-compact">
+                    <div class="card shadow-small">
+                        <div class="card-body">
+                            <div class="row row-no-wrap row-align-center">
+                                <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5ec45b1193499d8787823220_fit.svg" width="48" alt="" class="image-2">
+                                <div class="text-space-left">Got a business idea? We will make magic to transform it into a digital product</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-small">
+                        <div class="card-body">
+                            <div class="row row-no-wrap row-align-center">
+                                <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5ec45c1258a3910650541235_interface.svg" width="48" alt="">
+                                <div class="text-space-left">Are you already in ecommerce and want to upgrade your brand with an effective custom shopify application?</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-small no-bottom-space">
+                        <div class="card-body">
+                            <div class="row row-no-wrap row-align-center">
+                                <img src="https://uploads-ssl.webflow.com/5eb23de733da8a2a8053cb31/5ec45d4df4edced29f446e0b_computer.svg" width="48" alt="">
+                                <div class="text-space-left">Can’t find what you need in the Shopify app store? </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% include "en/components/company.html" %}
+{% include "en/components/contact.html" %}
 {% endblock %}

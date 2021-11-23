@@ -1,8 +1,36 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
     <head>
         <title>Shifty Solutions - {% block title %}{% endblock %}</title>
         {% include "en/components/head.html" %}
+        <style>
+            .grid-quarters-2 {
+                display: grid;
+                grid-auto-columns: 1fr;
+                grid-column-gap: 24px;
+                grid-row-gap: 24px;
+                -ms-grid-columns: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr;
+                -ms-grid-rows: auto;
+                grid-template-rows: auto;
+            }
+            @media screen and (max-width: 991px) {
+                .grid-quarters-2 {
+                    -ms-grid-columns: 1fr 1fr;
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+            @media screen and (max-width: 479px) {
+                .grid-quarters-2 {
+                    -ms-grid-columns: 1fr;
+                    grid-template-columns: 1fr;
+                }
+            }
+            .app-type-image:hover {
+                transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+            }
+        </style>
     </head>
     <body class="body-2">
         {% include "en/components/navbar.html" %}
@@ -10,4 +38,5 @@
         {% include "en/components/footer.html" %}
         {% include "en/components/scripts.html" %}
     </body>
+    {% block extrascripts %}{% endblock %}
 </html>

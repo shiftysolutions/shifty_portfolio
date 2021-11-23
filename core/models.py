@@ -5,7 +5,7 @@ class BlogPost(models.Model):
     sub_title   = models.TextField(default="")
     miniature   = models.TextField(default="")
     slug        = models.TextField(default="")
-    description = models.TextField(default="")
+    content     = models.TextField(default="")
 
     def __str__(self):
         return self.title
